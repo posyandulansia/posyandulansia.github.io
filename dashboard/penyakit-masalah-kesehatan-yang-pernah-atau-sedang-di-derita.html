@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Posyandu Lansia</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- Icon-->
+  <link rel="icon" type="image/png" href="../assets/media/icon.png">
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <!-- Material Kit CSS -->
+  <link href="../assets/css/material-kit.css?v=3.0.0" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/custom.css">
+</head>
+
+<body>
+  <!-- Navbar Transparent -->
+  <nav class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none my-3 navbar-transparent">
+    <div class="container">
+      <a class="navbar-brand  text-white " href="../dashboard.html" rel="tooltip" title="Posyandu Lansia" data-placement="bottom">
+        <img src="../assets/media/logo.png" alt="" class="img-fluid">
+      </a>
+      <a href="../index.html" class="btn btn-sm  bg-gradient-danger mb-0 me-1 mt-2 mt-md-0">Log Out</a></li>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+
+  <div class="page-header min-vh-80" style="background-image: url('../assets/media/dashboard.png');background-size: 75%;background-repeat: no-repeat;background-position: center bottom 66px;">
+    <span class="mask bg-gradient-primary opacity-6"></span>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <div class="text-center">
+            <h1 class="text-primary">Dashboard</h1>
+            <h3 class="text-primary">Welcome!</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
+    <div class="container">
+      <div class="section text-center">
+        <div class="row">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-4" onclick="location.href='penyakit-masalah-kesehatan-yang-pernah-atau-sedang-di-derita.html';" style="cursor:pointer;">
+                <img src="../assets/media/penyakit-masalah-kesehatan-yang-pernah-atau-sedang-di-derita.png" class="img-fluid">
+                <h6 class="text-danger">Penyakit / masalah kesehatan yang pernah atau sedang di derita</h6>
+              </div>
+              <div class="col-4" onclick="location.href='catatan-perkembangan-kesehatan-lansia.html';" style="cursor:pointer;">
+                <img src="../assets/media/catatan-perkembangan-kesehatan-lansia.png" class="img-fluid">
+                <h6>Catatan perkembangan kesehatan lansia</h6>
+              </div>
+              <div class="col-4" onclick="location.href='catatan-kesehatan-lansia.html';" style="cursor:pointer;">
+                <img src="../assets/media/catatan-kesehatan-lansia.png" class="img-fluid">
+                <h6>Catatan kesehatan lansia</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <h1>Penyakit / masalah kesehatan yang pernah atau sedang di derita</h1>
+            <div class="card mt-3">
+                <div class="table-responsive">
+                  <table class="table table-striped table-bordered border-danger">
+                    <thead>
+                      <tr class="text-dark table-danger">
+                        <th>Nama Penyakit/Masalah</th>
+                        <th>Ada/Tidak</th>
+                        <th>Thn ...s/d...</th>
+                        <th>Keterangan</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-dark text-bolder align-middle">Tekanan darah tinggi (hipertensi)</td>
+                        <td>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="ya1" value="ya1">
+                            <label class="form-check-label" for="ya1">Ya</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="tidak1" value="tidak1">
+                            <label class="form-check-label" for="tidak1">Tidak</label>
+                          </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="Tahun awal - Tahun akhir"></td>
+                        <td><textarea class="form-control" placeholder="Keterangan" rows="1"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td class="text-dark text-bolder align-middle">Penyakit Kencing manis (diabetes)</td>
+                        <td>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="ya2" value="ya2">
+                            <label class="form-check-label" for="ya2">Ya</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions2" id="tidak2" value="tidak2">
+                            <label class="form-check-label" for="tidak2">Tidak</label>
+                          </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="Tahun awal - Tahun akhir"></td>
+                        <td><textarea class="form-control" placeholder="Keterangan" rows="1"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td class="text-dark text-bolder align-middle">Stroke</td>
+                        <td>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="ya3" value="ya3">
+                            <label class="form-check-label" for="ya3">Ya</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions3" id="tidak3" value="tidak3">
+                            <label class="form-check-label" for="tidak3">Tidak</label>
+                          </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="Tahun awal - Tahun akhir"></td>
+                        <td><textarea class="form-control" placeholder="Keterangan" rows="1"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td class="text-dark text-bolder align-middle">Penyakit paru-paru</td>
+                        <td>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="ya4" value="ya4">
+                            <label class="form-check-label" for="ya4">Ya</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions4" id="tidak4" value="tidak4">
+                            <label class="form-check-label" for="tidak4">Tidak</label>
+                          </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="Tahun awal - Tahun akhir"></td>
+                        <td><textarea class="form-control" placeholder="Keterangan" rows="1"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td class="text-dark text-bolder align-middle">Penyakit jantung</td>
+                        <td>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions5" id="ya5" value="ya5">
+                            <label class="form-check-label" for="ya5">Ya</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions5" id="tidak5" value="tidak5">
+                            <label class="form-check-label" for="tidak5">Tidak</label>
+                          </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="Tahun awal - Tahun akhir"></td>
+                        <td><textarea class="form-control" placeholder="Keterangan" rows="1"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td class="text-dark text-bolder align-middle">Penyakit lambung (maag)</td>
+                        <td>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="ya6" value="ya6">
+                            <label class="form-check-label" for="ya6">Ya</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions6" id="tidak6" value="tidak6">
+                            <label class="form-check-label" for="tidak6">Tidak</label>
+                          </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="Tahun awal - Tahun akhir"></td>
+                        <td><textarea class="form-control" placeholder="Keterangan" rows="1"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td class="text-dark text-bolder align-middle">Asam Bronkial</td>
+                        <td>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions7" id="ya7" value="ya7">
+                            <label class="form-check-label" for="ya7">Ya</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions7" id="tidak7" value="tidak7">
+                            <label class="form-check-label" for="tidak7">Tidak</label>
+                          </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="Tahun awal - Tahun akhir"></td>
+                        <td><textarea class="form-control" placeholder="Keterangan" rows="1"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td class="text-dark text-bolder align-middle">Penyakit ginjal dan saluran kemih</td>
+                        <td>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions8" id="ya8" value="ya8">
+                            <label class="form-check-label" for="ya8">Ya</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions8" id="tidak8" value="tidak8">
+                            <label class="form-check-label" for="tidak8">Tidak</label>
+                          </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="Tahun awal - Tahun akhir"></td>
+                        <td><textarea class="form-control" placeholder="Keterangan" rows="1"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td class="text-dark text-bolder align-middle">Pembesaran prostat</td>
+                        <td>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions9" id="ya9" value="ya9">
+                            <label class="form-check-label" for="ya9">Ya</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions9" id="tidak9" value="tidak9">
+                            <label class="form-check-label" for="tidak9">Tidak</label>
+                          </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="Tahun awal - Tahun akhir"></td>
+                        <td><textarea class="form-control" placeholder="Keterangan" rows="1"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td class="text-dark text-bolder align-middle">Kanker</td>
+                        <td>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions10" id="ya10" value="ya10">
+                            <label class="form-check-label" for="ya10">Ya</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions10" id="tidak10" value="tidak10">
+                            <label class="form-check-label" for="tidak10">Tidak</label>
+                          </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="Tahun awal - Tahun akhir"></td>
+                        <td><textarea class="form-control" placeholder="Keterangan" rows="1"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td class="text-dark text-bolder align-middle">Penyakit kuning (hepatitis)</td>
+                        <td>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions11" id="ya11" value="ya11">
+                            <label class="form-check-label" for="ya11">Ya</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions11" id="tidak11" value="tidak11">
+                            <label class="form-check-label" for="tidak11">Tidak</label>
+                          </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="Tahun awal - Tahun akhir"></td>
+                        <td><textarea class="form-control" placeholder="Keterangan" rows="1"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td class="text-dark text-bolder align-middle">Penyakit sendi (arthritis)</td>
+                        <td>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions12" id="ya12" value="ya12">
+                            <label class="form-check-label" for="ya12">Ya</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions12" id="tidak12" value="tidak12">
+                            <label class="form-check-label" for="tidak12">Tidak</label>
+                          </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="Tahun awal - Tahun akhir"></td>
+                        <td><textarea class="form-control" placeholder="Keterangan" rows="1"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td class="text-dark text-bolder align-middle">Asam urat</td>
+                        <td>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions13" id="ya13" value="ya13">
+                            <label class="form-check-label" for="ya13">Ya</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions13" id="tidak13" value="tidak13">
+                            <label class="form-check-label" for="tidak13">Tidak</label>
+                          </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="Tahun awal - Tahun akhir"></td>
+                        <td><textarea class="form-control" placeholder="Keterangan" rows="1"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td class="text-dark text-bolder align-middle">Keropos tulang (osteoporosis)</td>
+                        <td>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions14" id="ya14" value="ya14">
+                            <label class="form-check-label" for="ya14">Ya</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions14" id="tidak14" value="tidak14">
+                            <label class="form-check-label" for="tidak14">Tidak</label>
+                          </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="Tahun awal - Tahun akhir"></td>
+                        <td><textarea class="form-control" placeholder="Keterangan" rows="1"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td class="text-dark text-bolder align-middle">Gangguan pengelihatan</td>
+                        <td>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions15" id="ya15" value="ya15">
+                            <label class="form-check-label" for="ya15">Ya</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions15" id="tidak15" value="tidak15">
+                            <label class="form-check-label" for="tidak15">Tidak</label>
+                          </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="Tahun awal - Tahun akhir"></td>
+                        <td><textarea class="form-control" placeholder="Keterangan" rows="1"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td class="text-dark text-bolder align-middle">Gangguan pendengaran</td>
+                        <td>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions16" id="ya16" value="ya16">
+                            <label class="form-check-label" for="ya16">Ya</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions16" id="tidak16" value="tidak16">
+                            <label class="form-check-label" for="tidak16">Tidak</label>
+                          </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="Tahun awal - Tahun akhir"></td>
+                        <td><textarea class="form-control" placeholder="Keterangan" rows="1"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td class="text-dark text-bolder align-middle">Gangguan gigi dan mulut</td>
+                        <td>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions17" id="ya17" value="ya17">
+                            <label class="form-check-label" for="ya17">Ya</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions17" id="tidak17" value="tidak17">
+                            <label class="form-check-label" for="tidak17">Tidak</label>
+                          </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="Tahun awal - Tahun akhir"></td>
+                        <td><textarea class="form-control" placeholder="Keterangan" rows="1"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td class="text-dark text-bolder align-middle">Gangguan BAK/BAB</td>
+                        <td>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions18" id="ya18" value="ya18">
+                            <label class="form-check-label" for="ya18">Ya</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions18" id="tidak18" value="tidak18">
+                            <label class="form-check-label" for="tidak18">Tidak</label>
+                          </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="Tahun awal - Tahun akhir"></td>
+                        <td><textarea class="form-control" placeholder="Keterangan" rows="1"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td class="text-dark text-bolder align-middle">Kecemasan</td>
+                        <td>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions19" id="ya19" value="ya19">
+                            <label class="form-check-label" for="ya19">Ya</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions19" id="tidak19" value="tidak19">
+                            <label class="form-check-label" for="tidak19">Tidak</label>
+                          </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="Tahun awal - Tahun akhir"></td>
+                        <td><textarea class="form-control" placeholder="Keterangan" rows="1"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td class="text-dark text-bolder align-middle">Susah tidur (insomia)</td>
+                        <td>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions20" id="ya20" value="ya20">
+                            <label class="form-check-label" for="ya20">Ya</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions20" id="tidak20" value="tidak20">
+                            <label class="form-check-label" for="tidak20">Tidak</label>
+                          </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="Tahun awal - Tahun akhir"></td>
+                        <td><textarea class="form-control" placeholder="Keterangan" rows="1"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td class="text-dark text-bolder align-middle">Depresi</td>
+                        <td>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions21" id="ya21" value="ya21">
+                            <label class="form-check-label" for="ya21">Ya</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions21" id="tidak21" value="tidak21">
+                            <label class="form-check-label" for="tidak21">Tidak</label>
+                          </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="Tahun awal - Tahun akhir"></td>
+                        <td><textarea class="form-control" placeholder="Keterangan" rows="1"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td class="text-dark text-bolder align-middle">Mudah tersinggung/pemarah</td>
+                        <td>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions22" id="ya22" value="ya22">
+                            <label class="form-check-label" for="ya22">Ya</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions22" id="tidak22" value="tidak22">
+                            <label class="form-check-label" for="tidak22">Tidak</label>
+                          </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="Tahun awal - Tahun akhir"></td>
+                        <td><textarea class="form-control" placeholder="Keterangan" rows="1"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td class="text-dark text-bolder align-middle">Perubahan perilaku</td>
+                        <td>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions23" id="ya23" value="ya23">
+                            <label class="form-check-label" for="ya23">Ya</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions23" id="tidak23" value="tidak23">
+                            <label class="form-check-label" for="tidak23">Tidak</label>
+                          </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="Tahun awal - Tahun akhir"></td>
+                        <td><textarea class="form-control" placeholder="Keterangan" rows="1"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td class="text-dark text-bolder align-middle">Mudah lupa</td>
+                        <td>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions24" id="ya24" value="ya24">
+                            <label class="form-check-label" for="ya24">Ya</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions24" id="tidak24" value="tidak24">
+                            <label class="form-check-label" for="tidak24">Tidak</label>
+                          </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="Tahun awal - Tahun akhir"></td>
+                        <td><textarea class="form-control" placeholder="Keterangan" rows="1"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td class="text-dark text-bolder align-middle">Mudah berdebar-debar</td>
+                        <td>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions25" id="ya25" value="ya25">
+                            <label class="form-check-label" for="ya25">Ya</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions25" id="tidak25" value="tidak25">
+                            <label class="form-check-label" for="tidak25">Tidak</label>
+                          </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="Tahun awal - Tahun akhir"></td>
+                        <td><textarea class="form-control" placeholder="Keterangan" rows="1"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td class="text-dark text-bolder align-middle">Anemia (Lemah, Letih, Lesu, Lelah, Lunglai)</td>
+                        <td>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions26" id="ya26" value="ya26">
+                            <label class="form-check-label" for="ya26">Ya</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions26" id="tidak26" value="tidak26">
+                            <label class="form-check-label" for="tidak26">Tidak</label>
+                          </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="Tahun awal - Tahun akhir"></td>
+                        <td><textarea class="form-control" placeholder="Keterangan" rows="1"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td class="text-dark text-bolder align-middle">Kesulitan makan</td>
+                        <td>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions27" id="ya27" value="ya27">
+                            <label class="form-check-label" for="ya27">Ya</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions27" id="tidak27" value="tidak27">
+                            <label class="form-check-label" for="tidak27">Tidak</label>
+                          </div>
+                        </td>
+                        <td><input type="text" class="form-control" placeholder="Tahun awal - Tahun akhir"></td>
+                        <td><textarea class="form-control" placeholder="Keterangan" rows="1"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td class="text-dark text-bolder align-middle">Lain-lain (sebutkan) :</td>
+                        <td><textarea class="form-control" placeholder="Nama Penyakit/Masalah" rows="1"></textarea></td>
+                        <td><input type="text" class="form-control" placeholder="Tahun awal - Tahun akhir"></td>
+                        <td><textarea class="form-control" placeholder="Keterangan" rows="1"></textarea></td>
+                      </tr>
+                      <tr></tr>
+                    </tbody>
+                  </table>
+                </div>
+            </div>              
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer pt-5">
+    <div class="container">
+      <div class=" row">
+        <div class="col-12">
+          <div class="text-center">
+            <p class="text-dark my-4 text-sm font-weight-normal">
+              All rights reserved. Copyright © <script>
+                document.write(new Date().getFullYear())
+              </script> Material Kit by <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

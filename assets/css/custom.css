@@ -1,0 +1,7 @@
+.bg-gradient-primary {
+    background-image: linear-gradient(195deg, #fffefe 0%, #Fff2de 100%);
+}
+
+.text-primary {
+    color: #5e3023 !important;
+  }
